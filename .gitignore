@@ -5,3 +5,4 @@
 *.DS_Store
 *cdk.out/
 target/
+logs/
