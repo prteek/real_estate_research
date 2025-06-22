@@ -1,0 +1,7 @@
+*credentials
+*.venv/
+.vscode/
+*.ipynb_checkpoints/
+*.DS_Store
+*cdk.out/
+target/

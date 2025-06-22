@@ -1,0 +1,790 @@
+[0m20:00:27.034034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11287c8c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112df2b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112df24b0>]}
+
+
+============================== 20:00:27.038212 | 2314e948-d77a-4f8d-a159-28a39da4ee7c ==============================
+[0m20:00:27.038212 [info ] [MainThread]: Running with dbt=1.10.2
+[0m20:00:27.038618 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/prateek/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m20:00:36.273026 [debug] [MainThread]: Starter project path: /Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/include/starter_project
+[0m20:00:36.280329 [info ] [MainThread]: 
+Your new dbt project "real_estate_research" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:00:36.280726 [info ] [MainThread]: Setting up your profile.
+[0m20:00:36.281715 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m20:00:36.297066 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 9.309761, "process_in_blocks": "0", "process_kernel_time": 0.183233, "process_mem_max_rss": "107151360", "process_out_blocks": "0", "process_user_time": 0.884183}
+[0m20:00:36.297809 [debug] [MainThread]: Command `dbt init` failed at 20:00:36.297658 after 9.31 seconds
+[0m20:00:36.298185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107866f30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1123dd430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1121b2480>]}
+[0m20:00:36.298506 [debug] [MainThread]: Flushing usage events
+[0m20:00:37.920762 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:03:13.423143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10886b260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a3f320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a3ecc0>]}
+
+
+============================== 20:03:13.426912 | 469eb1fd-2bf6-4d3b-9b16-cd5f642a4cc0 ==============================
+[0m20:03:13.426912 [info ] [MainThread]: Running with dbt=1.10.2
+[0m20:03:13.427311 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/prateek/Documents/projects/prteek/real_estate_research', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/prateek/Documents/projects/prteek/real_estate_research/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run -m example -t dev', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:03:13.427640 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of
+`--resource-type model --select`
+[0m20:03:13.427865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '469eb1fd-2bf6-4d3b-9b16-cd5f642a4cc0', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a3f080>]}
+[0m20:03:13.429764 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'real_estate_research'
+[0m20:03:13.430086 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:03:13.431986 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.050791625, "process_in_blocks": "0", "process_kernel_time": 0.138843, "process_mem_max_rss": "105496576", "process_out_blocks": "0", "process_user_time": 0.800434}
+[0m20:03:13.432349 [debug] [MainThread]: Command `dbt run` failed at 20:03:13.432295 after 0.05 seconds
+[0m20:03:13.432577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087555e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a3f0e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a3f0b0>]}
+[0m20:03:13.432783 [debug] [MainThread]: Flushing usage events
+[0m20:03:22.118367 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:03:58.118732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a98c80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1121f1c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133faf00>]}
+
+
+============================== 20:03:58.122306 | 8b0eac6a-2255-4040-a658-b81d277be258 ==============================
+[0m20:03:58.122306 [info ] [MainThread]: Running with dbt=1.10.2
+[0m20:03:58.122764 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/prateek/Documents/projects/prteek/real_estate_research', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/prateek/Documents/projects/prteek/real_estate_research/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run -m example -t dev', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:03:58.123076 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of
+`--resource-type model --select`
+[0m20:03:58.123319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '8b0eac6a-2255-4040-a658-b81d277be258', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11322b080>]}
+[0m20:03:58.182071 [error] [MainThread]: Encountered an error:
+cannot import name 'Credentials' from 'dbt.adapters.base' (/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/adapters/base/__init__.py)
+[0m20:03:58.185177 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/cli/requires.py", line 161, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/cli/requires.py", line 111, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/cli/requires.py", line 251, in wrapper
+    profile = load_profile(flags.PROJECT_DIR, flags.VARS, flags.PROFILE, flags.TARGET, threads)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/config/runtime.py", line 78, in load_profile
+    profile = Profile.render(
+              ^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/config/profile.py", line 402, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/config/profile.py", line 368, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/config/profile.py", line 324, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/config/profile.py", line 148, in _credentials_from_profile
+    cls = load_plugin(typename)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/adapters/factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/adapters/factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/adapters/athena/__init__.py", line 1, in <module>
+    from dbt.adapters.athena.connections import AthenaConnectionManager
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/adapters/athena/connections.py", line 19, in <module>
+    from dbt.adapters.base import Credentials
+ImportError: cannot import name 'Credentials' from 'dbt.adapters.base' (/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/adapters/base/__init__.py)
+
+[0m20:03:58.185750 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:03:58.187828 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.109986044, "process_in_blocks": "0", "process_kernel_time": 0.146642, "process_mem_max_rss": "112082944", "process_out_blocks": "0", "process_user_time": 0.835215}
+[0m20:03:58.188234 [debug] [MainThread]: Command `dbt run` failed at 20:03:58.188170 after 0.11 seconds
+[0m20:03:58.188481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c48a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133fb590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f69af0>]}
+[0m20:03:58.188733 [debug] [MainThread]: Flushing usage events
+[0m20:05:03.379274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1021f6e70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047eb620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047eae40>]}
+
+
+============================== 20:05:03.382909 | 3d623c39-792b-4846-ab37-5ecf8e4b524f ==============================
+[0m20:05:03.382909 [info ] [MainThread]: Running with dbt=1.10.2
+[0m20:05:03.383370 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/prateek/Documents/projects/prteek/real_estate_research', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/prateek/Documents/projects/prteek/real_estate_research/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run -m example -t dev', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:05:03.383709 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of
+`--resource-type model --select`
+[0m20:05:03.383961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '3d623c39-792b-4846-ab37-5ecf8e4b524f', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102da86b0>]}
+[0m20:05:03.443132 [error] [MainThread]: Encountered an error:
+cannot import name 'Credentials' from 'dbt.adapters.base' (/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/adapters/base/__init__.py)
+[0m20:05:03.446149 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/cli/requires.py", line 161, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/cli/requires.py", line 111, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/cli/requires.py", line 251, in wrapper
+    profile = load_profile(flags.PROJECT_DIR, flags.VARS, flags.PROFILE, flags.TARGET, threads)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/config/runtime.py", line 78, in load_profile
+    profile = Profile.render(
+              ^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/config/profile.py", line 402, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/config/profile.py", line 368, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/config/profile.py", line 324, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/config/profile.py", line 148, in _credentials_from_profile
+    cls = load_plugin(typename)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/adapters/factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/adapters/factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prateek/.pyenv/versions/3.12.8/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/adapters/athena/__init__.py", line 1, in <module>
+    from dbt.adapters.athena.connections import AthenaConnectionManager
+  File "/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/adapters/athena/connections.py", line 19, in <module>
+    from dbt.adapters.base import Credentials
+ImportError: cannot import name 'Credentials' from 'dbt.adapters.base' (/Users/prateek/.pyenv/versions/3.12.8/envs/real_estate_research/lib/python3.12/site-packages/dbt/adapters/base/__init__.py)
+
+[0m20:05:03.446738 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:05:03.448604 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.11277808, "process_in_blocks": "0", "process_kernel_time": 0.147631, "process_mem_max_rss": "111362048", "process_out_blocks": "0", "process_user_time": 0.83365}
+[0m20:05:03.448926 [debug] [MainThread]: Command `dbt run` failed at 20:05:03.448872 after 0.11 seconds
+[0m20:05:03.449178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102da86b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048c4d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c1ee10>]}
+[0m20:05:03.449407 [debug] [MainThread]: Flushing usage events
+[0m20:05:33.458772 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:10:05.973551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b52f60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059a0e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059a0ce0>]}
+
+
+============================== 20:10:05.977322 | d841e35b-48ac-48f4-9330-c3fced050172 ==============================
+[0m20:10:05.977322 [info ] [MainThread]: Running with dbt=1.10.2
+[0m20:10:05.977797 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/prateek/Documents/projects/prteek/real_estate_research', 'log_path': '/Users/prateek/Documents/projects/prteek/real_estate_research/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run -m example -t dev', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:10:05.978138 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of
+`--resource-type model --select`
+[0m20:10:05.978386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd841e35b-48ac-48f4-9330-c3fced050172', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059fbf80>]}
+[0m20:10:06.388271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd841e35b-48ac-48f4-9330-c3fced050172', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d491f0>]}
+[0m20:10:06.420333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd841e35b-48ac-48f4-9330-c3fced050172', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10514acf0>]}
+[0m20:10:06.420930 [info ] [MainThread]: Registered adapter: athena=1.9.4
+[0m20:10:06.512003 [debug] [MainThread]: checksum: 8d17e20b047c2e6e611598fc0572c4ee349b7557100a95ba6d82c97dad848265, vars: {}, profile: , target: dev, version: 1.10.2
+[0m20:10:06.512578 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:10:06.512825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd841e35b-48ac-48f4-9330-c3fced050172', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060ae660>]}
+[0m20:10:06.630341 [warn ] [MainThread]: [[33mWARNING[0m][UnexpectedJinjaBlockDeprecation]: Deprecated functionality
+Found unexpected 'pyathena' block tag. in file `macros/utils/timestamps.sql`
+[0m20:10:06.630759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd841e35b-48ac-48f4-9330-c3fced050172', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105983f80>]}
+[0m20:10:06.640840 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two macros named "set_table_classification" in the project
+  "dbt_athena".
+   To fix this error, rename or remove one of the following macros:
+      - macros/adapters/relation.sql
+      - macros/materializations/models/helpers.sql
+[0m20:10:06.641373 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+- UnexpectedJinjaBlockDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:10:06.644381 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.7143762, "process_in_blocks": "0", "process_kernel_time": 0.185313, "process_mem_max_rss": "131612672", "process_out_blocks": "0", "process_user_time": 1.167809}
+[0m20:10:06.644702 [debug] [MainThread]: Command `dbt run` failed at 20:10:06.644649 after 0.71 seconds
+[0m20:10:06.644943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059fbe00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060ae660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105465880>]}
+[0m20:10:06.645168 [debug] [MainThread]: Flushing usage events
+[0m20:10:07.234696 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:10:36.201324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10602b110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d64830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d64110>]}
+
+
+============================== 20:10:36.204104 | bdf06cea-0424-4100-a79c-dd26ae19a743 ==============================
+[0m20:10:36.204104 [info ] [MainThread]: Running with dbt=1.10.2
+[0m20:10:36.204483 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/prateek/Documents/projects/prteek/real_estate_research', 'log_path': '/Users/prateek/Documents/projects/prteek/real_estate_research/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select example -t dev', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:10:36.425909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bdf06cea-0424-4100-a79c-dd26ae19a743', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b86cf0>]}
+[0m20:10:36.459303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bdf06cea-0424-4100-a79c-dd26ae19a743', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073f8ef0>]}
+[0m20:10:36.459972 [info ] [MainThread]: Registered adapter: athena=1.9.4
+[0m20:10:36.533483 [debug] [MainThread]: checksum: 8d17e20b047c2e6e611598fc0572c4ee349b7557100a95ba6d82c97dad848265, vars: {}, profile: , target: dev, version: 1.10.2
+[0m20:10:36.534098 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:10:36.534348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bdf06cea-0424-4100-a79c-dd26ae19a743', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bdba40>]}
+[0m20:10:36.643896 [warn ] [MainThread]: [[33mWARNING[0m][UnexpectedJinjaBlockDeprecation]: Deprecated functionality
+Found unexpected 'pyathena' block tag. in file `macros/utils/timestamps.sql`
+[0m20:10:36.644333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'bdf06cea-0424-4100-a79c-dd26ae19a743', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bd84d0>]}
+[0m20:10:36.654917 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two macros named "set_table_classification" in the project
+  "dbt_athena".
+   To fix this error, rename or remove one of the following macros:
+      - macros/adapters/relation.sql
+      - macros/materializations/models/helpers.sql
+[0m20:10:36.655414 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- UnexpectedJinjaBlockDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:10:36.656859 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.4996633, "process_in_blocks": "0", "process_kernel_time": 0.163028, "process_mem_max_rss": "132775936", "process_out_blocks": "0", "process_user_time": 1.161803}
+[0m20:10:36.657144 [debug] [MainThread]: Command `dbt run` failed at 20:10:36.657095 after 0.50 seconds
+[0m20:10:36.657376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a1a600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ca1dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d365d0>]}
+[0m20:10:36.657590 [debug] [MainThread]: Flushing usage events
+[0m20:10:37.172498 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:11:03.415544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f03e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111cfbfe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111cfbd10>]}
+
+
+============================== 20:11:03.418755 | 8d997384-a811-42c1-822d-bbbddc1899a0 ==============================
+[0m20:11:03.418755 [info ] [MainThread]: Running with dbt=1.10.2
+[0m20:11:03.419151 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/prateek/Documents/projects/prteek/real_estate_research', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/prateek/Documents/projects/prteek/real_estate_research/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select example -t dev', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:11:03.422384 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.athena'
+[0m20:11:03.422946 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "dev", target "dev" invalid: Runtime Error
+    Could not find adapter type athena!
+[0m20:11:03.425454 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.0522845, "process_in_blocks": "0", "process_kernel_time": 0.10829, "process_mem_max_rss": "106102784", "process_out_blocks": "0", "process_user_time": 0.777564}
+[0m20:11:03.425909 [debug] [MainThread]: Command `dbt run` failed at 20:11:03.425852 after 0.05 seconds
+[0m20:11:03.426165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f03e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107192c00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102ef110>]}
+[0m20:11:03.426410 [debug] [MainThread]: Flushing usage events
+[0m20:11:03.938511 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:11:15.450629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11adb6090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a514a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a5167e0>]}
+
+
+============================== 20:11:15.453375 | 19552cc8-5374-4d88-8681-f8ffd9b664b9 ==============================
+[0m20:11:15.453375 [info ] [MainThread]: Running with dbt=1.10.2
+[0m20:11:15.453781 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/prateek/Documents/projects/prteek/real_estate_research/logs', 'version_check': 'True', 'profiles_dir': '/Users/prateek/Documents/projects/prteek/real_estate_research', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select example -t dev', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:11:15.679725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '19552cc8-5374-4d88-8681-f8ffd9b664b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b746600>]}
+[0m20:11:15.713217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '19552cc8-5374-4d88-8681-f8ffd9b664b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b52afc0>]}
+[0m20:11:15.713902 [info ] [MainThread]: Registered adapter: athena=1.9.4
+[0m20:11:15.783744 [debug] [MainThread]: checksum: 8d17e20b047c2e6e611598fc0572c4ee349b7557100a95ba6d82c97dad848265, vars: {}, profile: , target: dev, version: 1.10.2
+[0m20:11:15.784323 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:11:15.784561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '19552cc8-5374-4d88-8681-f8ffd9b664b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11af06420>]}
+[0m20:11:15.893627 [warn ] [MainThread]: [[33mWARNING[0m][UnexpectedJinjaBlockDeprecation]: Deprecated functionality
+Found unexpected 'pyathena' block tag. in file `macros/utils/timestamps.sql`
+[0m20:11:15.894056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '19552cc8-5374-4d88-8681-f8ffd9b664b9', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ad7c200>]}
+[0m20:11:16.498263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '19552cc8-5374-4d88-8681-f8ffd9b664b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11cd0ecf0>]}
+[0m20:11:16.540035 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prateek/Documents/projects/prteek/real_estate_research/target/manifest.json
+[0m20:11:16.541522 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prateek/Documents/projects/prteek/real_estate_research/target/semantic_manifest.json
+[0m20:11:16.554531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '19552cc8-5374-4d88-8681-f8ffd9b664b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11cf1b260>]}
+[0m20:11:16.554894 [info ] [MainThread]: Found 2 models, 4 data tests, 460 macros
+[0m20:11:16.555127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '19552cc8-5374-4d88-8681-f8ffd9b664b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11cda0cb0>]}
+[0m20:11:16.556018 [info ] [MainThread]: 
+[0m20:11:16.556252 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:11:16.556437 [info ] [MainThread]: 
+[0m20:11:16.556752 [debug] [MainThread]: Acquiring new athena connection 'master'
+[0m20:11:16.559813 [debug] [ThreadPool]: Acquiring new athena connection 'list_AwsDataCatalog'
+[0m20:11:16.560077 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:11:17.001058 [debug] [ThreadPool]: On list_AwsDataCatalog: Close
+[0m20:11:17.003667 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AwsDataCatalog, now list_AwsDataCatalog_default)
+[0m20:11:17.004289 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:11:18.262191 [debug] [ThreadPool]: On list_AwsDataCatalog_default: Close
+[0m20:11:18.263904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '19552cc8-5374-4d88-8681-f8ffd9b664b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ce63bf0>]}
+[0m20:11:18.266212 [debug] [Thread-1 (]: Began running node model.real_estate_research.my_first_dbt_model
+[0m20:11:18.266676 [info ] [Thread-1 (]: 1 of 2 START sql table model default.my_first_dbt_model ........................ [RUN]
+[0m20:11:18.267171 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_AwsDataCatalog_default, now model.real_estate_research.my_first_dbt_model)
+[0m20:11:18.267461 [debug] [Thread-1 (]: Began compiling node model.real_estate_research.my_first_dbt_model
+[0m20:11:18.272778 [debug] [Thread-1 (]: Writing injected SQL for node "model.real_estate_research.my_first_dbt_model"
+[0m20:11:18.273928 [debug] [Thread-1 (]: Began executing node model.real_estate_research.my_first_dbt_model
+[0m20:11:18.311947 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:11:19.298082 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table_name : 434616802091.default.my_first_dbt_model
+[0m20:11:19.298606 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table type : TableType.TABLE
+[0m20:11:19.299763 [debug] [Thread-1 (]: Dropping relation via Glue and S3 APIs
+[0m20:11:20.206325 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table_name : 434616802091.default.my_first_dbt_model
+[0m20:11:20.207283 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table type : TableType.TABLE
+[0m20:11:20.207764 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: "AwsDataCatalog"."default"."my_first_dbt_model" is stored in s3://aws-athena-query-results-434616802091-eu-west-1/tables/default/my_first_dbt_model/e9188a15-c115-4c72-9140-1c1d6a820d46
+[0m20:11:20.558434 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Deleting table data: path='s3://aws-athena-query-results-434616802091-eu-west-1/tables/default/my_first_dbt_model/e9188a15-c115-4c72-9140-1c1d6a820d46', bucket='aws-athena-query-results-434616802091-eu-west-1', prefix='tables/default/my_first_dbt_model/e9188a15-c115-4c72-9140-1c1d6a820d46/'
+[0m20:11:21.940601 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Deleted table from glue catalog: "AwsDataCatalog"."default"."my_first_dbt_model"
+[0m20:11:21.971158 [debug] [Thread-1 (]: Skip partitioning: False
+[0m20:11:22.246915 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: S3 path does not exist
+[0m20:11:22.247775 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Running Athena query:
+-- /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dev", "target_name": "dev", "node_id": "model.real_estate_research.my_first_dbt_model"} */
+create table "AwsDataCatalog"."default"."my_first_dbt_model"
+    with (
+      table_type='hive',
+      is_external=true,external_location='s3://ds-dev-bkt/default/my_first_dbt_model/6ef135f7-0ffb-4faa-bfd4-619819eea178',
+      format='parquet'
+    )
+    as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+[0m20:11:22.660125 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID c2f1c734-fe03-439d-993f-aae3b2109e5d
+[0m20:11:24.194535 [debug] [Thread-1 (]: COMPILED CODE RESULT: {"rowcount":2,"data_scanned_in_bytes":0}
+[0m20:11:24.208045 [debug] [Thread-1 (]: Using athena connection "model.real_estate_research.my_first_dbt_model"
+[0m20:11:24.208934 [debug] [Thread-1 (]: On model.real_estate_research.my_first_dbt_model: alter table `default`.`my_first_dbt_model` set tblproperties ('classification' = 'parquet')
+[0m20:11:24.357138 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID 9c5e0e2e-13ca-45e5-b399-d773360ad054
+[0m20:11:25.806792 [debug] [Thread-1 (]: SQL status: OK -1 in 1.597 seconds
+[0m20:11:25.809922 [debug] [Thread-1 (]: Writing runtime sql for node "model.real_estate_research.my_first_dbt_model"
+[0m20:11:25.811808 [debug] [Thread-1 (]: Using athena connection "model.real_estate_research.my_first_dbt_model"
+[0m20:11:25.812225 [debug] [Thread-1 (]: On model.real_estate_research.my_first_dbt_model: -- /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dev", "target_name": "dev", "node_id": "model.real_estate_research.my_first_dbt_model"} */
+SELECT '{"rowcount":2,"data_scanned_in_bytes":0}';
+[0m20:11:25.961510 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID be381ead-77e3-47f6-84ca-b87a6f1f9648
+[0m20:11:27.486823 [debug] [Thread-1 (]: SQL status: OK 2 in 1.671 seconds
+[0m20:11:27.493498 [debug] [Thread-1 (]: On model.real_estate_research.my_first_dbt_model: Close
+[0m20:11:27.495501 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '19552cc8-5374-4d88-8681-f8ffd9b664b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11baad580>]}
+[0m20:11:27.495975 [info ] [Thread-1 (]: 1 of 2 OK created sql table model default.my_first_dbt_model ................... [[32mOK 2[0m in 9.23s]
+[0m20:11:27.496388 [debug] [Thread-1 (]: Finished running node model.real_estate_research.my_first_dbt_model
+[0m20:11:27.496907 [debug] [Thread-1 (]: Began running node model.real_estate_research.my_second_dbt_model
+[0m20:11:27.497239 [info ] [Thread-1 (]: 2 of 2 START sql view model default.my_second_dbt_model ........................ [RUN]
+[0m20:11:27.497554 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.real_estate_research.my_first_dbt_model, now model.real_estate_research.my_second_dbt_model)
+[0m20:11:27.497787 [debug] [Thread-1 (]: Began compiling node model.real_estate_research.my_second_dbt_model
+[0m20:11:27.499543 [debug] [Thread-1 (]: Writing injected SQL for node "model.real_estate_research.my_second_dbt_model"
+[0m20:11:27.500149 [debug] [Thread-1 (]: Began executing node model.real_estate_research.my_second_dbt_model
+[0m20:11:27.511998 [debug] [Thread-1 (]: Dropping relation "AwsDataCatalog"."default"."my_second_dbt_model" because it is of type table
+[0m20:11:27.513717 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:11:28.472234 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table_name : 434616802091.default.my_second_dbt_model
+[0m20:11:28.473449 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table type : TableType.TABLE
+[0m20:11:28.474298 [debug] [Thread-1 (]: Dropping relation via Glue and S3 APIs
+[0m20:11:29.435878 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table_name : 434616802091.default.my_second_dbt_model
+[0m20:11:29.436972 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table type : TableType.TABLE
+[0m20:11:29.437492 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: "AwsDataCatalog"."default"."my_second_dbt_model" is stored in s3://aws-athena-query-results-434616802091-eu-west-1/tables/default/my_second_dbt_model/44cf774b-d77e-4118-99d0-acf7799dac89
+[0m20:11:29.725622 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Deleting table data: path='s3://aws-athena-query-results-434616802091-eu-west-1/tables/default/my_second_dbt_model/44cf774b-d77e-4118-99d0-acf7799dac89', bucket='aws-athena-query-results-434616802091-eu-west-1', prefix='tables/default/my_second_dbt_model/44cf774b-d77e-4118-99d0-acf7799dac89/'
+[0m20:11:31.409117 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Deleted table from glue catalog: "AwsDataCatalog"."default"."my_second_dbt_model"
+[0m20:11:31.420370 [debug] [Thread-1 (]: Writing runtime sql for node "model.real_estate_research.my_second_dbt_model"
+[0m20:11:31.421826 [debug] [Thread-1 (]: Using athena connection "model.real_estate_research.my_second_dbt_model"
+[0m20:11:31.422431 [debug] [Thread-1 (]: On model.real_estate_research.my_second_dbt_model: -- /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dev", "target_name": "dev", "node_id": "model.real_estate_research.my_second_dbt_model"} */
+create or replace view
+    "AwsDataCatalog"."default"."my_second_dbt_model"
+  as
+    -- Use the `ref` function to select from other models
+
+select *
+from "AwsDataCatalog"."default"."my_first_dbt_model"
+where id = 1
+
+[0m20:11:31.670447 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID 5d86d724-530b-4a5b-b4d9-34785140b87c
+[0m20:11:33.316067 [debug] [Thread-1 (]: SQL status: OK -1 in 1.893 seconds
+[0m20:11:34.343908 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Total table versions: ['0']
+[0m20:11:34.348036 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Versions to delete: []
+[0m20:11:34.350119 [debug] [Thread-1 (]: On model.real_estate_research.my_second_dbt_model: Close
+[0m20:11:34.351491 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '19552cc8-5374-4d88-8681-f8ffd9b664b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12941d880>]}
+[0m20:11:34.352596 [info ] [Thread-1 (]: 2 of 2 OK created sql view model default.my_second_dbt_model ................... [[32mOK -1[0m in 6.85s]
+[0m20:11:34.353480 [debug] [Thread-1 (]: Finished running node model.real_estate_research.my_second_dbt_model
+[0m20:11:34.355125 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:11:34.355677 [debug] [MainThread]: Connection 'model.real_estate_research.my_second_dbt_model' was properly closed.
+[0m20:11:34.358357 [info ] [MainThread]: 
+[0m20:11:34.358875 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 17.80 seconds (17.80s).
+[0m20:11:34.360253 [debug] [MainThread]: Command end result
+[0m20:11:34.380361 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prateek/Documents/projects/prteek/real_estate_research/target/manifest.json
+[0m20:11:34.382356 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prateek/Documents/projects/prteek/real_estate_research/target/semantic_manifest.json
+[0m20:11:34.386845 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/prateek/Documents/projects/prteek/real_estate_research/target/run_results.json
+[0m20:11:34.387139 [info ] [MainThread]: 
+[0m20:11:34.387448 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:11:34.387693 [info ] [MainThread]: 
+[0m20:11:34.387946 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m20:11:34.388322 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- UnexpectedJinjaBlockDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:11:34.390344 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 18.983242, "process_in_blocks": "0", "process_kernel_time": 0.43306, "process_mem_max_rss": "224231424", "process_out_blocks": "0", "process_user_time": 3.004985}
+[0m20:11:34.390734 [debug] [MainThread]: Command `dbt run` succeeded at 20:11:34.390670 after 18.98 seconds
+[0m20:11:34.391026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a4e4260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1293e71d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1293e7380>]}
+[0m20:11:34.391286 [debug] [MainThread]: Flushing usage events
+[0m20:11:35.081345 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:11:45.830853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101e66f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1107fbc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1107fbfe0>]}
+
+
+============================== 20:11:45.834968 | 9d6b3fc9-440d-4525-a301-40b401bf8669 ==============================
+[0m20:11:45.834968 [info ] [MainThread]: Running with dbt=1.10.2
+[0m20:11:45.835365 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/prateek/Documents/projects/prteek/real_estate_research', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/prateek/Documents/projects/prteek/real_estate_research/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run -m example -t dev', 'send_anonymous_usage_stats': 'True'}
+[0m20:11:45.835684 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of
+`--resource-type model --select`
+[0m20:11:45.835929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '9d6b3fc9-440d-4525-a301-40b401bf8669', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1105a92e0>]}
+[0m20:11:46.078149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9d6b3fc9-440d-4525-a301-40b401bf8669', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1118baae0>]}
+[0m20:11:46.111151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9d6b3fc9-440d-4525-a301-40b401bf8669', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107157b60>]}
+[0m20:11:46.112353 [info ] [MainThread]: Registered adapter: athena=1.9.4
+[0m20:11:46.186098 [debug] [MainThread]: checksum: 8d17e20b047c2e6e611598fc0572c4ee349b7557100a95ba6d82c97dad848265, vars: {}, profile: , target: dev, version: 1.10.2
+[0m20:11:46.292906 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:11:46.293369 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:11:46.315418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9d6b3fc9-440d-4525-a301-40b401bf8669', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112562f90>]}
+[0m20:11:46.359515 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prateek/Documents/projects/prteek/real_estate_research/target/manifest.json
+[0m20:11:46.361509 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prateek/Documents/projects/prteek/real_estate_research/target/semantic_manifest.json
+[0m20:11:46.374484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9d6b3fc9-440d-4525-a301-40b401bf8669', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1126e3f20>]}
+[0m20:11:46.374862 [info ] [MainThread]: Found 2 models, 4 data tests, 460 macros
+[0m20:11:46.375103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9d6b3fc9-440d-4525-a301-40b401bf8669', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112536690>]}
+[0m20:11:46.376055 [info ] [MainThread]: 
+[0m20:11:46.376308 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:11:46.376504 [info ] [MainThread]: 
+[0m20:11:46.376867 [debug] [MainThread]: Acquiring new athena connection 'master'
+[0m20:11:46.380277 [debug] [ThreadPool]: Acquiring new athena connection 'list_AwsDataCatalog'
+[0m20:11:46.380576 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:11:47.415651 [debug] [ThreadPool]: On list_AwsDataCatalog: Close
+[0m20:11:47.416859 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AwsDataCatalog, now list_AwsDataCatalog_default)
+[0m20:11:47.417608 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:11:48.438202 [debug] [ThreadPool]: On list_AwsDataCatalog_default: Close
+[0m20:11:48.442136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9d6b3fc9-440d-4525-a301-40b401bf8669', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1126e3110>]}
+[0m20:11:48.445478 [debug] [Thread-1 (]: Began running node model.real_estate_research.my_first_dbt_model
+[0m20:11:48.445870 [info ] [Thread-1 (]: 1 of 2 START sql table model default.my_first_dbt_model ........................ [RUN]
+[0m20:11:48.446283 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_AwsDataCatalog_default, now model.real_estate_research.my_first_dbt_model)
+[0m20:11:48.446533 [debug] [Thread-1 (]: Began compiling node model.real_estate_research.my_first_dbt_model
+[0m20:11:48.452098 [debug] [Thread-1 (]: Writing injected SQL for node "model.real_estate_research.my_first_dbt_model"
+[0m20:11:48.452737 [debug] [Thread-1 (]: Began executing node model.real_estate_research.my_first_dbt_model
+[0m20:11:48.485731 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:11:49.388818 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table_name : 434616802091.default.my_first_dbt_model
+[0m20:11:49.389875 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table type : TableType.TABLE
+[0m20:11:49.393203 [debug] [Thread-1 (]: Dropping relation via Glue and S3 APIs
+[0m20:11:50.257323 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table_name : 434616802091.default.my_first_dbt_model
+[0m20:11:50.258246 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table type : TableType.TABLE
+[0m20:11:50.258881 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: "AwsDataCatalog"."default"."my_first_dbt_model" is stored in s3://ds-dev-bkt/default/my_first_dbt_model/6ef135f7-0ffb-4faa-bfd4-619819eea178
+[0m20:11:50.554086 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Deleting table data: path='s3://ds-dev-bkt/default/my_first_dbt_model/6ef135f7-0ffb-4faa-bfd4-619819eea178', bucket='ds-dev-bkt', prefix='default/my_first_dbt_model/6ef135f7-0ffb-4faa-bfd4-619819eea178/'
+[0m20:11:52.096552 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Deleted table from glue catalog: "AwsDataCatalog"."default"."my_first_dbt_model"
+[0m20:11:52.116355 [debug] [Thread-1 (]: Skip partitioning: False
+[0m20:11:54.000326 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: S3 path does not exist
+[0m20:11:54.001324 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Running Athena query:
+-- /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dev", "target_name": "dev", "node_id": "model.real_estate_research.my_first_dbt_model"} */
+create table "AwsDataCatalog"."default"."my_first_dbt_model"
+    with (
+      table_type='hive',
+      is_external=true,external_location='s3://ds-dev-bkt/default/my_first_dbt_model/b76f00b6-fa30-4e48-8072-fa23d635da15',
+      format='parquet'
+    )
+    as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+[0m20:11:54.285253 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID cf3cd4f6-ecdb-47d4-8357-94d7ae05eb0e
+[0m20:11:56.775278 [debug] [Thread-1 (]: COMPILED CODE RESULT: {"rowcount":2,"data_scanned_in_bytes":0}
+[0m20:11:56.784680 [debug] [Thread-1 (]: Using athena connection "model.real_estate_research.my_first_dbt_model"
+[0m20:11:56.785785 [debug] [Thread-1 (]: On model.real_estate_research.my_first_dbt_model: alter table `default`.`my_first_dbt_model` set tblproperties ('classification' = 'parquet')
+[0m20:11:56.905179 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID 99414c4b-ac32-4b2f-ab66-4b8cb9e52ee2
+[0m20:11:58.301011 [debug] [Thread-1 (]: SQL status: OK -1 in 1.514 seconds
+[0m20:11:58.304264 [debug] [Thread-1 (]: Writing runtime sql for node "model.real_estate_research.my_first_dbt_model"
+[0m20:11:58.305536 [debug] [Thread-1 (]: Using athena connection "model.real_estate_research.my_first_dbt_model"
+[0m20:11:58.305972 [debug] [Thread-1 (]: On model.real_estate_research.my_first_dbt_model: -- /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dev", "target_name": "dev", "node_id": "model.real_estate_research.my_first_dbt_model"} */
+SELECT '{"rowcount":2,"data_scanned_in_bytes":0}';
+[0m20:11:58.452227 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID d1d26f10-def4-4b9d-a1e7-8c70b2e6e2ec
+[0m20:11:59.915725 [debug] [Thread-1 (]: SQL status: OK 2 in 1.609 seconds
+[0m20:11:59.929419 [debug] [Thread-1 (]: On model.real_estate_research.my_first_dbt_model: Close
+[0m20:11:59.932475 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9d6b3fc9-440d-4525-a301-40b401bf8669', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112499190>]}
+[0m20:11:59.933500 [info ] [Thread-1 (]: 1 of 2 OK created sql table model default.my_first_dbt_model ................... [[32mOK 2[0m in 11.48s]
+[0m20:11:59.934385 [debug] [Thread-1 (]: Finished running node model.real_estate_research.my_first_dbt_model
+[0m20:11:59.936153 [debug] [Thread-1 (]: Began running node model.real_estate_research.my_second_dbt_model
+[0m20:11:59.936923 [info ] [Thread-1 (]: 2 of 2 START sql view model default.my_second_dbt_model ........................ [RUN]
+[0m20:11:59.937608 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.real_estate_research.my_first_dbt_model, now model.real_estate_research.my_second_dbt_model)
+[0m20:11:59.938057 [debug] [Thread-1 (]: Began compiling node model.real_estate_research.my_second_dbt_model
+[0m20:11:59.941263 [debug] [Thread-1 (]: Writing injected SQL for node "model.real_estate_research.my_second_dbt_model"
+[0m20:11:59.942200 [debug] [Thread-1 (]: Began executing node model.real_estate_research.my_second_dbt_model
+[0m20:11:59.958175 [debug] [Thread-1 (]: Writing runtime sql for node "model.real_estate_research.my_second_dbt_model"
+[0m20:11:59.959114 [debug] [Thread-1 (]: Using athena connection "model.real_estate_research.my_second_dbt_model"
+[0m20:11:59.959474 [debug] [Thread-1 (]: On model.real_estate_research.my_second_dbt_model: -- /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dev", "target_name": "dev", "node_id": "model.real_estate_research.my_second_dbt_model"} */
+create or replace view
+    "AwsDataCatalog"."default"."my_second_dbt_model"
+  as
+    -- Use the `ref` function to select from other models
+
+select *
+from "AwsDataCatalog"."default"."my_first_dbt_model"
+where id = 1
+
+[0m20:11:59.959779 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:12:00.261818 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID 3eee6931-f91c-4ba3-b77c-85e447907470
+[0m20:12:01.869689 [debug] [Thread-1 (]: SQL status: OK -1 in 1.910 seconds
+[0m20:12:02.791439 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Total table versions: ['1', '0']
+[0m20:12:02.794630 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Versions to delete: []
+[0m20:12:02.796406 [debug] [Thread-1 (]: On model.real_estate_research.my_second_dbt_model: Close
+[0m20:12:02.797184 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9d6b3fc9-440d-4525-a301-40b401bf8669', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1243c6ed0>]}
+[0m20:12:02.797938 [info ] [Thread-1 (]: 2 of 2 OK created sql view model default.my_second_dbt_model ................... [[32mOK -1[0m in 2.86s]
+[0m20:12:02.798554 [debug] [Thread-1 (]: Finished running node model.real_estate_research.my_second_dbt_model
+[0m20:12:02.800040 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:12:02.800541 [debug] [MainThread]: Connection 'model.real_estate_research.my_second_dbt_model' was properly closed.
+[0m20:12:02.800929 [info ] [MainThread]: 
+[0m20:12:02.801280 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 16.42 seconds (16.42s).
+[0m20:12:02.802070 [debug] [MainThread]: Command end result
+[0m20:12:02.820243 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prateek/Documents/projects/prteek/real_estate_research/target/manifest.json
+[0m20:12:02.821840 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prateek/Documents/projects/prteek/real_estate_research/target/semantic_manifest.json
+[0m20:12:02.826107 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/prateek/Documents/projects/prteek/real_estate_research/target/run_results.json
+[0m20:12:02.826428 [info ] [MainThread]: 
+[0m20:12:02.826751 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:12:02.826995 [info ] [MainThread]: 
+[0m20:12:02.827251 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m20:12:02.827643 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:12:02.829920 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 17.041464, "process_in_blocks": "0", "process_kernel_time": 0.386191, "process_mem_max_rss": "222822400", "process_out_blocks": "0", "process_user_time": 2.228468}
+[0m20:12:02.830390 [debug] [MainThread]: Command `dbt run` succeeded at 20:12:02.830321 after 17.04 seconds
+[0m20:12:02.830715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101e66f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107216ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117b75c10>]}
+[0m20:12:02.831043 [debug] [MainThread]: Flushing usage events
+[0m20:12:03.396637 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:12:36.556619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdfd6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7de930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7dd8b0>]}
+
+
+============================== 20:12:36.559461 | b9cd6d0b-0fae-45d3-82e0-d15b14e1a660 ==============================
+[0m20:12:36.559461 [info ] [MainThread]: Running with dbt=1.10.2
+[0m20:12:36.559967 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/prateek/Documents/projects/prteek/real_estate_research/logs', 'profiles_dir': '/Users/prateek/Documents/projects/prteek/real_estate_research', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run -m example -t dev', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:12:36.560385 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of
+`--resource-type model --select`
+[0m20:12:36.560659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'b9cd6d0b-0fae-45d3-82e0-d15b14e1a660', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8fbe60>]}
+[0m20:12:36.562733 [error] [MainThread]: Encountered an error:
+Runtime Error
+  The profile 'dev' does not have a target named 'dev'. The valid target names for this profile are:
+   - default
+[0m20:12:36.563076 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:12:36.564396 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.048205666, "process_in_blocks": "0", "process_kernel_time": 0.106096, "process_mem_max_rss": "106233856", "process_out_blocks": "0", "process_user_time": 0.775562}
+[0m20:12:36.564697 [debug] [MainThread]: Command `dbt run` failed at 20:12:36.564647 after 0.05 seconds
+[0m20:12:36.564926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdfd6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8a10a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7dd8b0>]}
+[0m20:12:36.565147 [debug] [MainThread]: Flushing usage events
+[0m20:12:37.111197 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:12:41.513421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068a9220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070a0f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070a0e00>]}
+
+
+============================== 20:12:41.516364 | cba99220-88ce-4915-aafd-a1d1f3998723 ==============================
+[0m20:12:41.516364 [info ] [MainThread]: Running with dbt=1.10.2
+[0m20:12:41.516866 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/prateek/Documents/projects/prteek/real_estate_research/logs', 'profiles_dir': '/Users/prateek/Documents/projects/prteek/real_estate_research', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select example -t dev', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:12:41.518914 [error] [MainThread]: Encountered an error:
+Runtime Error
+  The profile 'dev' does not have a target named 'dev'. The valid target names for this profile are:
+   - default
+[0m20:12:41.520304 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.05109579, "process_in_blocks": "0", "process_kernel_time": 0.096127, "process_mem_max_rss": "106266624", "process_out_blocks": "0", "process_user_time": 0.778122}
+[0m20:12:41.520651 [debug] [MainThread]: Command `dbt run` failed at 20:12:41.520597 after 0.05 seconds
+[0m20:12:41.520899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068a9220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ff4c80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070a10a0>]}
+[0m20:12:41.521319 [debug] [MainThread]: Flushing usage events
+[0m20:12:42.036030 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:12:46.418645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089efb30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fc9670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097280e0>]}
+
+
+============================== 20:12:46.421333 | ac0adf69-ffc9-4516-9d7d-ca790bfc3b20 ==============================
+[0m20:12:46.421333 [info ] [MainThread]: Running with dbt=1.10.2
+[0m20:12:46.421724 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/prateek/Documents/projects/prteek/real_estate_research/logs', 'profiles_dir': '/Users/prateek/Documents/projects/prteek/real_estate_research', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt run --select example -t default', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:12:46.655625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ac0adf69-ffc9-4516-9d7d-ca790bfc3b20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10973ad20>]}
+[0m20:12:46.687310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ac0adf69-ffc9-4516-9d7d-ca790bfc3b20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1e3230>]}
+[0m20:12:46.688299 [info ] [MainThread]: Registered adapter: athena=1.9.4
+[0m20:12:46.761030 [debug] [MainThread]: checksum: 0970f876c990073bada8655561bf7cae4c077cf3f10699c19e457b0f38f359d4, vars: {}, profile: , target: default, version: 1.10.2
+[0m20:12:46.847677 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m20:12:46.848037 [debug] [MainThread]: previous checksum: 0970f876c990073bada8655561bf7cae4c077cf3f10699c19e457b0f38f359d4, current checksum: 8d17e20b047c2e6e611598fc0572c4ee349b7557100a95ba6d82c97dad848265
+[0m20:12:46.848253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ac0adf69-ffc9-4516-9d7d-ca790bfc3b20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd988c0>]}
+[0m20:12:46.931859 [warn ] [MainThread]: [[33mWARNING[0m][UnexpectedJinjaBlockDeprecation]: Deprecated functionality
+Found unexpected 'pyathena' block tag. in file `macros/utils/timestamps.sql`
+[0m20:12:46.932279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'ac0adf69-ffc9-4516-9d7d-ca790bfc3b20', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bce3d40>]}
+[0m20:12:47.538223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ac0adf69-ffc9-4516-9d7d-ca790bfc3b20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdf4cb0>]}
+[0m20:12:47.576407 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prateek/Documents/projects/prteek/real_estate_research/target/manifest.json
+[0m20:12:47.577649 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prateek/Documents/projects/prteek/real_estate_research/target/semantic_manifest.json
+[0m20:12:47.589127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ac0adf69-ffc9-4516-9d7d-ca790bfc3b20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cb6dcd0>]}
+[0m20:12:47.589445 [info ] [MainThread]: Found 2 models, 4 data tests, 460 macros
+[0m20:12:47.589661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ac0adf69-ffc9-4516-9d7d-ca790bfc3b20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bff98e0>]}
+[0m20:12:47.590487 [info ] [MainThread]: 
+[0m20:12:47.590701 [info ] [MainThread]: Concurrency: 1 threads (target='default')
+[0m20:12:47.590895 [info ] [MainThread]: 
+[0m20:12:47.591198 [debug] [MainThread]: Acquiring new athena connection 'master'
+[0m20:12:47.594222 [debug] [ThreadPool]: Acquiring new athena connection 'list_AwsDataCatalog'
+[0m20:12:47.594459 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:12:48.038770 [debug] [ThreadPool]: On list_AwsDataCatalog: Close
+[0m20:12:48.040448 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AwsDataCatalog, now list_AwsDataCatalog_default)
+[0m20:12:48.040797 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:12:49.089014 [debug] [ThreadPool]: On list_AwsDataCatalog_default: Close
+[0m20:12:49.092376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ac0adf69-ffc9-4516-9d7d-ca790bfc3b20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071e3110>]}
+[0m20:12:49.096693 [debug] [Thread-1 (]: Began running node model.real_estate_research.my_first_dbt_model
+[0m20:12:49.097352 [info ] [Thread-1 (]: 1 of 2 START sql table model default.my_first_dbt_model ........................ [RUN]
+[0m20:12:49.098310 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_AwsDataCatalog_default, now model.real_estate_research.my_first_dbt_model)
+[0m20:12:49.098852 [debug] [Thread-1 (]: Began compiling node model.real_estate_research.my_first_dbt_model
+[0m20:12:49.106920 [debug] [Thread-1 (]: Writing injected SQL for node "model.real_estate_research.my_first_dbt_model"
+[0m20:12:49.108125 [debug] [Thread-1 (]: Began executing node model.real_estate_research.my_first_dbt_model
+[0m20:12:49.138708 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:12:50.137543 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table_name : 434616802091.default.my_first_dbt_model
+[0m20:12:50.138764 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table type : TableType.TABLE
+[0m20:12:50.142577 [debug] [Thread-1 (]: Dropping relation via Glue and S3 APIs
+[0m20:12:51.000447 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table_name : 434616802091.default.my_first_dbt_model
+[0m20:12:51.000970 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: table type : TableType.TABLE
+[0m20:12:51.001248 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: "AwsDataCatalog"."default"."my_first_dbt_model" is stored in s3://ds-dev-bkt/default/my_first_dbt_model/b76f00b6-fa30-4e48-8072-fa23d635da15
+[0m20:12:51.323598 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Deleting table data: path='s3://ds-dev-bkt/default/my_first_dbt_model/b76f00b6-fa30-4e48-8072-fa23d635da15', bucket='ds-dev-bkt', prefix='default/my_first_dbt_model/b76f00b6-fa30-4e48-8072-fa23d635da15/'
+[0m20:12:53.176917 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Deleted table from glue catalog: "AwsDataCatalog"."default"."my_first_dbt_model"
+[0m20:12:53.198203 [debug] [Thread-1 (]: Skip partitioning: False
+[0m20:12:53.758643 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: S3 path does not exist
+[0m20:12:53.759987 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Running Athena query:
+-- /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dev", "target_name": "default", "node_id": "model.real_estate_research.my_first_dbt_model"} */
+create table "AwsDataCatalog"."default"."my_first_dbt_model"
+    with (
+      table_type='hive',
+      is_external=true,external_location='s3://ds-dev-bkt/default/my_first_dbt_model/7ad39b91-1a00-4cec-ae89-af44388e6355',
+      format='parquet'
+    )
+    as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+[0m20:12:54.106736 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID 1cbd1269-6d00-4c37-aa3b-da220302e581
+[0m20:12:55.539451 [debug] [Thread-1 (]: COMPILED CODE RESULT: {"rowcount":2,"data_scanned_in_bytes":0}
+[0m20:12:55.548586 [debug] [Thread-1 (]: Using athena connection "model.real_estate_research.my_first_dbt_model"
+[0m20:12:55.549148 [debug] [Thread-1 (]: On model.real_estate_research.my_first_dbt_model: alter table `default`.`my_first_dbt_model` set tblproperties ('classification' = 'parquet')
+[0m20:12:55.675874 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID 20b46dda-1ad7-48d9-b915-cc068d2ebeac
+[0m20:12:57.085815 [debug] [Thread-1 (]: SQL status: OK -1 in 1.536 seconds
+[0m20:12:57.088504 [debug] [Thread-1 (]: Writing runtime sql for node "model.real_estate_research.my_first_dbt_model"
+[0m20:12:57.090353 [debug] [Thread-1 (]: Using athena connection "model.real_estate_research.my_first_dbt_model"
+[0m20:12:57.091142 [debug] [Thread-1 (]: On model.real_estate_research.my_first_dbt_model: -- /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dev", "target_name": "default", "node_id": "model.real_estate_research.my_first_dbt_model"} */
+SELECT '{"rowcount":2,"data_scanned_in_bytes":0}';
+[0m20:12:57.234032 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID 276083dd-1c49-4235-acd9-d629b0071702
+[0m20:12:58.655735 [debug] [Thread-1 (]: SQL status: OK 2 in 1.564 seconds
+[0m20:12:58.664191 [debug] [Thread-1 (]: On model.real_estate_research.my_first_dbt_model: Close
+[0m20:12:58.666351 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ac0adf69-ffc9-4516-9d7d-ca790bfc3b20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bfaae40>]}
+[0m20:12:58.666896 [info ] [Thread-1 (]: 1 of 2 OK created sql table model default.my_first_dbt_model ................... [[32mOK 2[0m in 9.57s]
+[0m20:12:58.667560 [debug] [Thread-1 (]: Finished running node model.real_estate_research.my_first_dbt_model
+[0m20:12:58.668231 [debug] [Thread-1 (]: Began running node model.real_estate_research.my_second_dbt_model
+[0m20:12:58.668811 [info ] [Thread-1 (]: 2 of 2 START sql view model default.my_second_dbt_model ........................ [RUN]
+[0m20:12:58.669239 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.real_estate_research.my_first_dbt_model, now model.real_estate_research.my_second_dbt_model)
+[0m20:12:58.669551 [debug] [Thread-1 (]: Began compiling node model.real_estate_research.my_second_dbt_model
+[0m20:12:58.677085 [debug] [Thread-1 (]: Writing injected SQL for node "model.real_estate_research.my_second_dbt_model"
+[0m20:12:58.678120 [debug] [Thread-1 (]: Began executing node model.real_estate_research.my_second_dbt_model
+[0m20:12:58.697343 [debug] [Thread-1 (]: Writing runtime sql for node "model.real_estate_research.my_second_dbt_model"
+[0m20:12:58.698149 [debug] [Thread-1 (]: Using athena connection "model.real_estate_research.my_second_dbt_model"
+[0m20:12:58.698493 [debug] [Thread-1 (]: On model.real_estate_research.my_second_dbt_model: -- /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dev", "target_name": "default", "node_id": "model.real_estate_research.my_second_dbt_model"} */
+create or replace view
+    "AwsDataCatalog"."default"."my_second_dbt_model"
+  as
+    -- Use the `ref` function to select from other models
+
+select *
+from "AwsDataCatalog"."default"."my_first_dbt_model"
+where id = 1
+
+[0m20:12:58.698819 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:12:58.965397 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Athena query ID 5366f2c4-7f19-424b-9f07-8e2b022394ca
+[0m20:13:00.374167 [debug] [Thread-1 (]: SQL status: OK -1 in 1.675 seconds
+[0m20:13:01.225347 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Total table versions: ['2', '1', '0']
+[0m20:13:01.232199 [debug] [Thread-1 (]: dbt.adapters.athena.constants adapter: Versions to delete: []
+[0m20:13:01.234656 [debug] [Thread-1 (]: On model.real_estate_research.my_second_dbt_model: Close
+[0m20:13:01.235778 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ac0adf69-ffc9-4516-9d7d-ca790bfc3b20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1187c8110>]}
+[0m20:13:01.236703 [info ] [Thread-1 (]: 2 of 2 OK created sql view model default.my_second_dbt_model ................... [[32mOK -1[0m in 2.57s]
+[0m20:13:01.237546 [debug] [Thread-1 (]: Finished running node model.real_estate_research.my_second_dbt_model
+[0m20:13:01.239203 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:13:01.239868 [debug] [MainThread]: Connection 'model.real_estate_research.my_second_dbt_model' was properly closed.
+[0m20:13:01.240353 [info ] [MainThread]: 
+[0m20:13:01.240811 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 13.65 seconds (13.65s).
+[0m20:13:01.241756 [debug] [MainThread]: Command end result
+[0m20:13:01.264013 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/prateek/Documents/projects/prteek/real_estate_research/target/manifest.json
+[0m20:13:01.265919 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/prateek/Documents/projects/prteek/real_estate_research/target/semantic_manifest.json
+[0m20:13:01.271081 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/prateek/Documents/projects/prteek/real_estate_research/target/run_results.json
+[0m20:13:01.271448 [info ] [MainThread]: 
+[0m20:13:01.271803 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:13:01.272083 [info ] [MainThread]: 
+[0m20:13:01.272371 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m20:13:01.272804 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- UnexpectedJinjaBlockDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:13:01.275081 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 14.89606, "process_in_blocks": "0", "process_kernel_time": 0.374584, "process_mem_max_rss": "236470272", "process_out_blocks": "0", "process_user_time": 2.701742}
+[0m20:13:01.275611 [debug] [MainThread]: Command `dbt run` succeeded at 20:13:01.275540 after 14.90 seconds
+[0m20:13:01.275938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096fbce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118710c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118697230>]}
+[0m20:13:01.276243 [debug] [MainThread]: Flushing usage events
+[0m20:13:01.816437 [debug] [MainThread]: An error was encountered while trying to flush usage events
