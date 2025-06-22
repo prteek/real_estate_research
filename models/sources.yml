@@ -1,6 +1,6 @@
 version: 2
 sources:
-  - name: piper
+  - name: priceindexofprivaterentsukmonthlypricestatistics
     tables:
       - name: priceindexofprivaterentsukmonthlypricestatistics.xlsx
         config:
@@ -12,11 +12,11 @@ sources:
             , stop_at_empty = true
             )"
 
-  - name: external_data
-    database: AwsDataCatalog  # Athena database name
-    schema: default      # Athena schema
+  - name: piper
+    database: AwsDataCatalog
+    schema: default
     tables:
-      - name: piper
-        external_location: "s3://ds-dev-bkt/piper_data/"
+      - name: raw
+        external_location: "s3://ds-dev-bkt/piper/raw"
         meta:
-          file_format: parquet
+          file_format: csv
