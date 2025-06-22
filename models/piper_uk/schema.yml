@@ -1,7 +1,0 @@
-version: 2
-
-models:
-  - name: piper_uk
-    description: "Basic transfer of data from dbt to athena"
-    config:
-        materialized: table
