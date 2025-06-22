@@ -1,0 +1,21 @@
+{
+    "sqltools.connections": [
+        {
+            "connectionMethod": "Profile",
+            "previewLimit": 50,
+            "driver": "driver.athena",
+            "outputLocation": "s3://aws-athena-query-results-434616802091-eu-west-1",
+            "region": "eu-west-1",
+            "name": "personal",
+            "profile": "personal",
+            "workgroup": "primary"
+        },
+        {
+            "name": "DuckDB",
+            "accessMode": "Read/Write",
+            "previewLimit": 50,
+            "driver": "DuckDB",
+            "databaseFilePath": ":memory:"
+        }
+    ]
+}
