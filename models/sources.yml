@@ -1,0 +1,22 @@
+version: 2
+sources:
+  - name: piper
+    tables:
+      - name: priceindexofprivaterentsukmonthlypricestatistics.xlsx
+        config:
+          external_location: "read_xlsx(
+            'https://www.ons.gov.uk/file?uri=/economy/inflationandpriceindices/datasets/priceindexofprivaterentsukmonthlypricestatistics/18june2025/priceindexofprivaterentsukmonthlypricestatistics.xlsx'
+            , range = 'A3:H'
+            , sheet='Table 1'
+            , ignore_errors=true
+            , stop_at_empty = true
+            )"
+
+  - name: external_data
+    database: AwsDataCatalog  # Athena database name
+    schema: default      # Athena schema
+    tables:
+      - name: piper
+        external_location: "s3://ds-dev-bkt/piper_data/"
+        meta:
+          file_format: parquet
