@@ -1,9 +1,14 @@
 version: 2
 
 models:
-  - name: piper
+  - name: piper_raw
     description: "Reading in excel data from ONS"
     config:
         materialized: external
-        location: 's3://ds-dev-bkt/piper/raw'
+        location: 's3://ds-dev-bkt/piper/piper_raw/data'
         format: csv
+
+  - name: piper_uk
+    description: "Basic transfer of data from dbt to athena"
+    config:
+        materialized: table
