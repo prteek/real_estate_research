@@ -16,7 +16,6 @@ sources:
     database: AwsDataCatalog
     schema: default
     tables:
-      - name: raw
-        external_location: "s3://ds-dev-bkt/piper/raw"
+      - name: piper_raw
         meta:
           file_format: csv
