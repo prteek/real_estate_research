@@ -16,7 +16,8 @@ dev:
       path: /tmp/dbt.duckdb  # Path to your DuckDB database file
       extensions:
         - httpfs  # Required for reading files from S3/HTTP
-        - parquet # Required for reading Parquet files
+        - parquet
+        - spatial
       settings:
         s3_region: eu-west-1
         s3_access_key_id: "{{ env_var('S3_ACCESS_KEY_ID') }}"
