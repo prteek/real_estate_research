@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: piper
+    description: "Reading in excel data from ONS"
+    config:
+        materialized: external
+        location: 's3://ds-dev-bkt/piper_data/raw'
+        format: csv
