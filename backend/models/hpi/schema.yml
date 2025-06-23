@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: hpi_raw
+    description: "Reading in excel data from ONS"
+    config:
+        materialized: external
+        location: 's3://real-estate-research/hpi/hpi_raw/data'
+        format: csv
+
+  - name: hpi_uk
+    description: "Basic transfer of data from dbt to athena"
+    config:
+        materialized: table
