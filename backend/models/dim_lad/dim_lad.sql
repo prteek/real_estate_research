@@ -7,7 +7,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS geo.dim_lad (
 )
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 STORED AS TEXTFILE
-LOCATION 's3://real-estate-research/hpi/hpi_raw/'
+LOCATION 's3://db.geo/dim_lad_raw/'
 TBLPROPERTIES (
   'skip.header.line.count' = '1',
   'classification' = 'csv'
