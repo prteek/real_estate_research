@@ -25,12 +25,20 @@ TBLPROPERTIES (
 select cast(time_period as date) as time_period
 , area_name
 , area_code
-, cast(average_price as double) as average_price
-, cast(sales_volume as int) as sales_volume
-, cast(detached_price as double) as detached_price
-, cast(semi_detached_price as double) as semi_detached_price
-, cast(terraced_price as double) as terraced_price
-, cast(flat_price as double) as flat_price
-, cast(new_build_price as double) as new_build_price
-, cast(non_new_build_price as double) as non_new_build_price
+, case when average_price = '' then null
+        else cast(average_price as double) end as average_price
+, case when sales_volume = '' then null
+        else cast(sales_volume as int) end as sales_volume
+, case when detached_price = '' then null
+        else cast(detached_price as double) end as detached_price
+, case when semi_detached_price = '' then null
+        else cast(semi_detached_price as double) end as semi_detached_price
+, case when terraced_price = '' then null
+        else cast(terraced_price as double) end as terraced_price
+, case when flat_price = '' then null
+        else cast(flat_price as double) end as flat_price
+, case when new_build_price = '' then null
+        else cast(new_build_price as double) end as new_build_price
+, case when non_new_build_price = '' then null
+        else cast(non_new_build_price as double) end as non_new_build_price
 from {{ source('hpi', 'hpi_raw') }}
