@@ -25,7 +25,7 @@ sources:
       - name: Local_Authority_Districts_May_2024_Boundaries_UK_BFC_-6788913184658251542.geojson
         config:
           external_location: "st_read(
-            's3://db.geo/dim_lad/geojson/Local_Authority_Districts_May_2024_Boundaries_UK_BFC_-6788913184658251542.geojson'
+            's3://db.geo/dim_lad_geojson/Local_Authority_Districts_May_2024_Boundaries_UK_BFC_-6788913184658251542.geojson'
             )"
 
       - name: dim_lad_raw
