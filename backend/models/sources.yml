@@ -14,7 +14,7 @@ sources:
 
   - name: piper
     database: AwsDataCatalog
-    schema: real_estate
+    schema: ukre
     tables:
       - name: piper_raw
         meta:
@@ -44,7 +44,7 @@ sources:
 
   - name: hpi
     database: AwsDataCatalog
-    schema: real_estate
+    schema: ukre
     tables:
       - name: hpi_raw
         meta:
