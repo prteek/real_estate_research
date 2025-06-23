@@ -1,13 +1,13 @@
 {{ config(
     pre_hook="
-CREATE EXTERNAL TABLE IF NOT EXISTS real_estate.piper_raw (
+CREATE EXTERNAL TABLE IF NOT EXISTS ukre.piper_raw (
   time_period STRING,
   area_name STRING,
   rental_price STRING
 )
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 STORED AS TEXTFILE
-LOCATION 's3://real-estate-research/piper/piper_raw/'
+LOCATION 's3://db.ukre/piper_raw/'
 TBLPROPERTIES (
   'skip.header.line.count' = '1',
   'classification' = 'csv'
