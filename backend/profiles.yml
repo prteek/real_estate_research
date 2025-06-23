@@ -11,13 +11,13 @@ dev:
       threads: 1
       type: athena
 
-    real_estate:
+    ukre:
       catalog: AwsDataCatalog
       region_name: eu-west-1
-      s3_data_dir: s3://real-estate-research
+      s3_data_dir: s3://db.ukre
       s3_staging_dir: s3://aws-athena-query-results-434616802091-eu-west-1
       s3_data_naming: table_unique
-      schema: real_estate
+      schema: ukre
       threads: 1
       type: athena
 
