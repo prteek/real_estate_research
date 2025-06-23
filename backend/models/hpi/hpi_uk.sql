@@ -1,6 +1,6 @@
 {{ config(
     pre_hook="
-CREATE EXTERNAL TABLE IF NOT EXISTS real_estate.hpi_raw (
+CREATE EXTERNAL TABLE IF NOT EXISTS ukre.hpi_raw (
   time_period STRING,
   area_name STRING,
   area_code STRING,
@@ -15,7 +15,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS real_estate.hpi_raw (
 )
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 STORED AS TEXTFILE
-LOCATION 's3://real-estate-research/hpi/hpi_raw/'
+LOCATION 's3://db.ukre/hpi_raw/'
 TBLPROPERTIES (
   'skip.header.line.count' = '1',
   'classification' = 'csv'
