@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_lad_raw
+    description: "Loading GEOJSON data in s3 from https://geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-may-2024-boundaries-uk-bfc-2/explore"
+    config:
+        materialized: external
+        location: 's3://db.geo/dim_lad/output/data'
+        format: csv
+
+  - name: dim_lad
+    description: "Basic transfer of data from dbt to athena"
+    config:
+        materialized: table

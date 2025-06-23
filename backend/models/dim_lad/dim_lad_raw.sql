@@ -6,6 +6,6 @@ select
 FROM (
     SELECT
         *,
-        ST_Transform(geom, 'EPSG:4326') AS geometry  -- Transform to CRS84
+        ST_Transform(geom, 'EPSG:4326', 'EPSG:4326') AS geometry  -- Source CRS is already correct
     FROM {{ source('dim_lad', 'Local_Authority_Districts_May_2024_Boundaries_UK_BFC_-6788913184658251542.geojson') }}
 )
