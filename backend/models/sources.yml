@@ -12,27 +12,13 @@ sources:
             , stop_at_empty = true
             )"
 
-  - name: piper
-    database: AwsDataCatalog
-    schema: ukre
-    tables:
-      - name: piper_raw
-        meta:
-          file_format: csv
-
   - name: dim_lad
     tables:
       - name: Local_Authority_Districts_May_2024_Boundaries_UK_BFC_-6788913184658251542.geojson
         config:
           external_location: "st_read(
-            's3://db.geo/dim_lad_geojson/Local_Authority_Districts_May_2024_Boundaries_UK_BFC_-6788913184658251542.geojson'
+            'local_files/Local_Authority_Districts_May_2024_Boundaries_UK_BFC_-6788913184658251542.geojson'
             )"
-
-      - name: dim_lad_raw
-        database: AwsDataCatalog
-        schema: geo
-        meta:
-            file_format: csv
 
   - name: house-price-index-data
     tables:
@@ -41,11 +27,3 @@ sources:
           external_location: "read_csv(
             'https://publicdata.landregistry.gov.uk/market-trend-data/house-price-index-data/UK-HPI-full-file-2025-04.csv'
             )"
-
-  - name: hpi
-    database: AwsDataCatalog
-    schema: ukre
-    tables:
-      - name: hpi_raw
-        meta:
-          file_format: csv

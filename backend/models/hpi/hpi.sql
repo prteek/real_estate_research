@@ -1,27 +1,3 @@
-{{ config(
-    pre_hook="
-CREATE EXTERNAL TABLE IF NOT EXISTS ukre.hpi_raw (
-  time_period STRING,
-  area_name STRING,
-  area_code STRING,
-  average_price STRING,
-  sales_volume STRING,
-  detached_price STRING,
-  semi_detached_price STRING,
-  terraced_price STRING,
-  flat_price STRING,
-  new_build_price STRING,
-  non_new_build_price STRING
-)
-ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
-STORED AS TEXTFILE
-LOCATION 's3://db.ukre/hpi_raw/'
-TBLPROPERTIES (
-  'skip.header.line.count' = '1',
-  'classification' = 'csv'
-)",
-) }}
-
 select cast(time_period as date) as time_period
 , area_name
 , area_code
@@ -41,4 +17,18 @@ select cast(time_period as date) as time_period
         else cast(new_build_price as double) end as new_build_price
 , case when non_new_build_price = '' then null
         else cast(non_new_build_price as double) end as non_new_build_price
-from {{ source('hpi', 'hpi_raw') }}
+
+from (
+select cast("Date" as date) as time_period
+, lower("RegionName") as area_name
+, lower("AreaCode") as area_code
+, "AveragePrice" as average_price
+, "SalesVolume" as sales_volume
+, "DetachedPrice" as detached_price
+, "SemiDetachedPrice" as semi_detached_price
+, "TerracedPrice" as terraced_price
+, "FlatPrice" as flat_price
+, "NewPrice" as new_build_price
+, "OldPrice" as non_new_build_price
+from {{ source("house-price-index-data", "UK-HPI-full-file-2025-04.csv") }}
+)

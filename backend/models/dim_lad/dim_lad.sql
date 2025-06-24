@@ -1,18 +1,11 @@
-{{ config(
-    pre_hook="
-CREATE EXTERNAL TABLE IF NOT EXISTS geo.dim_lad (
-  lad STRING,
-  lad_polygon_wkt STRING,
-  lad_centroid_wkt STRING
+select
+    lower(LAD24CD) AS lad,
+    lower(LAD24NM) AS lad_name,
+    ST_AsText(geometry) AS lad_polygon_wkt,
+    ST_AsText(ST_Centroid(geometry)) AS lad_centroid_wkt
+FROM (
+    SELECT
+        *,
+        ST_Transform(geom, 'EPSG:4326', 'EPSG:4326') AS geometry  -- Source CRS is already correct
+    FROM {{ source('dim_lad', 'Local_Authority_Districts_May_2024_Boundaries_UK_BFC_-6788913184658251542.geojson') }}
 )
-ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
-STORED AS TEXTFILE
-LOCATION 's3://db.geo/dim_lad_raw/'
-TBLPROPERTIES (
-  'skip.header.line.count' = '1',
-  'classification' = 'csv'
-)",
-) }}
-
-select *
-from from {{ source('dim_lad', 'dim_lad_raw') }}
