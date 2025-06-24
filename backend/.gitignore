@@ -6,3 +6,4 @@
 *cdk.out/
 target/
 logs/
+local_files/
