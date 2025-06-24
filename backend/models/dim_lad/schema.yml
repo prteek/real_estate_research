@@ -6,6 +6,6 @@ models:
     config:
         materialized: external
         location: 's3://db.geo/dim_lad/data'
-        format: csv
+        format: parquet
         glue_register: true
-        glue_database: ukre
+        glue_database: geo
