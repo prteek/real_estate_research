@@ -20,6 +20,22 @@ sources:
             'local_files/Local_Authority_Districts_May_2024_Boundaries_UK_BFC_-6788913184658251542.geojson'
             )"
 
+  - name: dim_lsoa
+    tables:
+      - name: dim_lsoa.geojson
+        config:
+          external_location: "st_read(
+            'local_files/dim_lsoa.geojson'
+            )"
+
+  - name: dim_msoa
+    tables:
+      - name: dim_msoa.geojson
+        config:
+          external_location: "st_read(
+            'local_files/dim_msoa.geojson'
+            )"
+
   - name: house-price-index-data
     tables:
       - name: UK-HPI-full-file-2025-04.csv
