@@ -12,7 +12,7 @@ sources:
             , stop_at_empty = true
             )"
 
-  - name: dim_lad
+  - name: geojsons
     tables:
       - name: Local_Authority_Districts_May_2024_Boundaries_UK_BFC_-6788913184658251542.geojson
         config:
@@ -20,20 +20,16 @@ sources:
             'local_files/Local_Authority_Districts_May_2024_Boundaries_UK_BFC_-6788913184658251542.geojson'
             )"
 
-  - name: dim_lsoa
-    tables:
-      - name: dim_lsoa.geojson
+      - name: Lower_layer_Super_Output_Areas_2021_EW_BFC_V8_-8407643096148449625.geojson
         config:
           external_location: "st_read(
-            'local_files/dim_lsoa.geojson'
+            'local_files/Lower_layer_Super_Output_Areas_2021_EW_BFC_V8_-8407643096148449625.geojson'
             )"
 
-  - name: dim_msoa
-    tables:
-      - name: dim_msoa.geojson
+      - name: MOSA_2021_EW_BFC_V6_8073017919673588333.geojson
         config:
           external_location: "st_read(
-            'local_files/dim_msoa.geojson'
+            'local_files/MOSA_2021_EW_BFC_V6_8073017919673588333.geojson'
             )"
 
   - name: house-price-index-data

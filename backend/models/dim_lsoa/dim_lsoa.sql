@@ -1,12 +1,12 @@
 select
-    lad,
-    lad_name,
-    ST_AsText(geometry) AS lad_polygon_wkt,
-    ST_AsText(ST_Centroid(geometry)) AS lad_centroid_wkt
+    lsoa,
+    lsoa_name,
+    ST_AsText(geometry) AS lsoa_polygon_wkt,
+    ST_AsText(ST_Centroid(geometry)) AS lsoa_centroid_wkt
 from (
     select
-        lower(LAD24CD) AS lad,
-        lower(LAD24NM) AS lad_name,
-        ST_Transform(geom, 'EPSG:4326', 'EPSG:4326') AS geometry  -- Source CRS is already correct
-    from {{ source('dim_lad', 'Local_Authority_Districts_May_2024_Boundaries_UK_BFC_-6788913184658251542.geojson') }}
+        lower(LSOA21CD) AS lsoa,
+        lower(LSOA21NM) AS lsoa_name,
+        ST_Transform(geometry, 'EPSG:4326', 'EPSG:4326') AS geometry  -- Source CRS is already correct
+    from {{ source('geojsons', 'Lower_layer_Super_Output_Areas_2021_EW_BFC_V8_-8407643096148449625.geojson') }}
 )
