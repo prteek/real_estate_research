@@ -19,8 +19,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: frontend
 
       - name: build
+        working-directory: frontend
         env:
           BASE_PATH: '/frontend'
           ## Add and uncomment any environment variables here
