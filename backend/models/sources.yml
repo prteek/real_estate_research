@@ -45,3 +45,11 @@ sources:
           external_location: "read_csv(
             'https://publicdata.landregistry.gov.uk/market-trend-data/house-price-index-data/UK-HPI-full-file-2025-04.csv'
             )"
+
+
+  - name: doogal
+    tables:
+      - name: postcodes.csv
+        description: "Downloaded from https://www.doogal.co.uk/files/postcodes.zip"
+        config:
+          external_location: "local_files/postcodes.csv"
