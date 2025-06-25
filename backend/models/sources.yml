@@ -8,8 +8,8 @@ sources:
             'https://www.ons.gov.uk/file?uri=/economy/inflationandpriceindices/datasets/priceindexofprivaterentsukmonthlypricestatistics/18june2025/priceindexofprivaterentsukmonthlypricestatistics.xlsx'
             , range = 'A3:H'
             , sheet='Table 1'
-            , ignore_errors=true
             , stop_at_empty = true
+            , all_varchar=true
             )"
 
   - name: geojsons
