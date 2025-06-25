@@ -6,7 +6,7 @@ sources:
         config:
           external_location: "read_xlsx(
             'https://www.ons.gov.uk/file?uri=/economy/inflationandpriceindices/datasets/priceindexofprivaterentsukmonthlypricestatistics/18june2025/priceindexofprivaterentsukmonthlypricestatistics.xlsx'
-            , range = 'A3:H'
+            , range = 'A3:AN'
             , sheet='Table 1'
             , stop_at_empty = true
             , all_varchar=true
