@@ -1,11 +1,32 @@
 ## Hello Evidence
 
-This is a new page in Evidence.
+### Orders Table
 
-### This is a lower level header
-This is some *italic* and **bold** text.
+```regions
+select * from ukre.pipr_regions
+```
 
-This is a [link](https://evidence.dev).
+<DataTable data={regions} />
 
-This is an image inserted using Markdown:
-![alt text](https://wasender.com/buy/wp-content/uploads/2021/07/testing.jpg)
+```latest
+select area_name
+, average_price
+, upper(area_code) as area_code
+, "type"
+from ukre.pipr_regions
+where time_period = (select max(time_period) from ukre.pipr_regions)
+```
+
+<AreaMap
+  data={latest}
+  areaCol="area_code"
+  geoJsonUrl="/lad.geojson"
+  geoId="LAD24CD"
+  value="average_price"
+  min=1000
+  max=2000
+  tooltip={[
+    {id: 'area_name', showColumnName: false},
+    {id: 'average_price', fmt: 'gbp', valueClass: 'text-[green]', showColumnName: false}
+]}
+/>
