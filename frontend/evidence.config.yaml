@@ -80,3 +80,6 @@ plugins:
     "@evidence-dev/trino": { }
     "@evidence-dev/motherduck": { }
     evidence-connector-aws-athena: {}
+
+deployment:
+  basePath: /real_estate_research/frontend
